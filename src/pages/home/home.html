@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="formu">
+    <ion-item>
+      <ion-label stacked>Fecha de nacimiento</ion-label>
+      <ion-input type="text" formControlName="fecha" placeholder="yyyy-mm-dd" value="1999-1-12"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>DNI:</ion-label>
+      <ion-input type="text" formControlName="dni" placeholder="99999999X" value="12345678X"></ion-input>
+    </ion-item>
+
+    <button ion-button [disabled]="!formu.valid" (click)="login()" >Login</button>
+  </form>
+</ion-content>
