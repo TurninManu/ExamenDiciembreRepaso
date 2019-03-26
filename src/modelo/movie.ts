@@ -1,3 +1,4 @@
+/*kajkjkaj*/
 export class Movie {
     constructor (public vote_count:number,
                 public id:number,
